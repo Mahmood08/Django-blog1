@@ -25,7 +25,11 @@ SECRET_KEY = '9qo(n5iu19^u0e!y^0w_0%zzr1k)ym^%86a=g%2c7-$xm@b9z='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['py230-ubtuntu02004016.westus.cloudapp.azure.com']
+ALLOWED_HOSTS = [
+    'py230-ubtuntu02004016.westus.cloudapp.azure.com'
+    'localhost', 
+    '127.0.0.1',
+    ]
 
 
 # Application definition
@@ -106,7 +110,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
